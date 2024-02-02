@@ -35,7 +35,7 @@ jobs:
           publication-id: ${{ secrets.HASHNODE_PUBLICATION_ID }}
 ```
 
-- Get the **access token** and **publication ID** from your Hashnode dashboard and add to the GitHub repository as secrets. These allow publishing access. If stuck, the [setup guide[](https://github.com/prettyirrelevant/hashnode-posts-publisher?tab=readme-ov-file#inputs) has step-by-step instructions.
+- Get the **access token** and **publication ID** from your Hashnode dashboard and add to the GitHub repository as secrets. These allow publishing access. If stuck, the [setup guide](https://github.com/prettyirrelevant/hashnode-posts-publisher?tab=readme-ov-file#inputs) has step-by-step instructions.
 
 - Write a sample post like `first-post.md` as below, push changes, and voila - it's published on your Hashnode blog!
 
@@ -61,6 +61,7 @@ I kicked things off by diving into GitHub Actions. I went with TypeScript (other
 My first order of business was figuring out the bare minimum features I'd need for a usable MVP. I settled on Markdown and HTML support, frontmatter parsing (critical for pulling out metadata from Markdown), uploading/updating posts to Hashnode, and maaybe drafts. Turns out drafts were a bust - the Hashnode API had other plans. Probably a skill issue lol.
 
 After defining the inputs and outputs in action.yml, it was time to tango with the Hashnode API. Being my first GraphQL API, it was quite the adventure. Thankfully the docs were helpful and I got uploading/updating posts working, albeit no drafts. Win some, lose some! Here's a snippet of the action.yml:
+
 ```yml
 author: 'Isaac Adewumi'
 name: 'hashnode-posts-publisher'
