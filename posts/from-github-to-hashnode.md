@@ -38,7 +38,8 @@ jobs:
 - Get the **access token** and **publication ID** from your Hashnode dashboard and add to the GitHub repository as secrets. These allow publishing access. If stuck, the [setup guide[](https://github.com/prettyirrelevant/hashnode-posts-publisher?tab=readme-ov-file#inputs) has step-by-step instructions.
 
 - Write a sample post like `first-post.md` as below, push changes, and voila - it's published on your Hashnode blog!
-```txt
+
+```md
 ---
 title: My First Post
 description: My First Ever Blog Post From GitHub repo
