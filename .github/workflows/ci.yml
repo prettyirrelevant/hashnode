@@ -1,0 +1,19 @@
+name: Publish Blog Posts
+on:
+  pull_request:
+  push:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Publish to Hashnode
+      uses: prettyirrelevant/hashnode-posts-publisher@v0.1.3
+      with:
+        supported-formats: md
+        posts-directory: posts
+        access-token: ${{ secrets.HASHNODE_ACCESS_TOKEN }}
+        publication-id: ${{ secrets.HASHNODE_PUBLICATION_ID }}
