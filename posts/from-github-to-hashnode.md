@@ -217,7 +217,7 @@ There's still room to improve and extend the project. Next, I could work on:
 ## Conclusion
 Building an automated Hashnode publishing workflow for their API Hackathon was a total blast! I finally got around to diving into GitHub Actions - something I'd been meaning to learn.
 
-The best part? I used this very workflow to author this [post](https://github.com/prettyirrelevant/hashode) in Markdown and push it straight from GitHub to publish. No more context switching between writing and publishing!
+The best part? I used this very workflow to author this [post](https://github.com/prettyirrelevant/hashnode) in Markdown and push it straight from GitHub to publish. No more context switching between writing and publishing!
 
 Mad props to the Hashnode team for bringing builders together to create solutions like this.
 
